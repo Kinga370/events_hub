@@ -1,64 +1,96 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>JNEC Events Hub — Home</title> 
-</head> 
-<body> 
-<header id="top"> 
-<h1>JNEC Events Hub</h1> 
-<nav> 
-<a href="index.html" title="Go to home page">Home</a> 
-<a href="events.html">Events</a> 
-<a href="register.html">Register</a> 
-<a href="gallery.html">Gallery</a> 
-<a href="contact.html">Contact</a> 
-</nav> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNEC Events Hub — Register</title>
+</head>
+
+<body>
+
+<header id="top">
+
+    <h1>JNEC Events Hub</h1>
+
+    <nav>
+        <a href="index.html" title="Go to home page">Home</a>
+        <a href="events.html">Events</a>
+        <a href="register.html">Register</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
 </header>
-<main> 
-    <section>
-    <h2>College Clubs</h2>
 
-    <dl>
-        <dt><strong>Computer Club</strong></dt>
-        <dd>
-            A club for students interested in programming,
-            software development, and computer technology.
-        </dd>
 
-        <dt><strong>Robotics Club</strong></dt>
-        <dd>
-            A club where students learn about robotics,
-            automation, electronics, and innovative projects.
-        </dd>
+<main>
 
-        <dt><strong>Sports Club</strong></dt>
-        <dd>
-            A club that promotes sports, physical activities,
-            teamwork, and healthy competition among students.
-        </dd>
-    </dl>
-</section>
-    <section id="welcome" class="intro"> 
-<h2>Welcome</h2> 
-<p>The <strong>Events Hub</strong> lists every upcoming event at 
-<em>Jigme Namgyel Engineering College</em>. 
-<span class="highlight" title="Registrations close 3 days before each event"> 
-Register early!</span></p> 
-<img src="media/campus.jpeg" alt="JNEC campus" width="400" 
-title="Our campus in Dewathang"> 
-</section> 
-<section id="location"> 
-<h2>Find Us</h2> 
-<iframe 
-src="https://www.openstreetmap.org/export/embed.html?bbox=91.44,26.85,91.48,26.88" 
-width="400" height="250" title="Campus map"></iframe> 
-</section> 
-<!-- page content here --> 
-</main> 
-<footer> 
-<p>&copy; 2026 JNEC Events Hub</p> 
-</footer> 
-</body> 
+    <h2>Register for an Event</h2>
+
+    <form>
+
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name" name="name" required>
+
+        <br><br>
+
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+
+
+        <label for="event">Select Event:</label>
+        <br>
+
+        <select name="event" id="event">
+
+            <option value="tech-fest">
+                Tech Fest
+            </option>
+
+            <option value="sports-day">
+                Sports Day
+            </option>
+
+            <option value="cultural-night">
+                Cultural Night
+            </option>
+
+            <!-- New event added -->
+            <option value="coding-competition">
+                Coding Competition
+            </option>
+
+        </select>
+
+        <br><br>
+
+
+        <label for="message">Message:</label>
+        <br>
+
+        <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+        <br><br>
+
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</main>
+
+
+<footer>
+
+    <p>&copy; 2026 JNEC Events Hub</p>
+
+</footer>
+
+</body>
 </html>
