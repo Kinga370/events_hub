@@ -30,7 +30,7 @@ main {
     padding: 24px;
 }
 /* simple selectors */ 
- h1 { color: #0f172a; }                  /* element */ 
+ h1 { color: #d6dae3; }                  /* element */ 
  .intro { background: #f8fafc; }          /* class   */ 
  #welcome { padding: 24px; }              /* id   */ 
  p.intro { font-size: 1.05rem; }           /* element.class */ 
@@ -109,4 +109,13 @@ nav a {
  .admin-only { display: none; } 
  .badge { display: inline; } 
  .event-card { display: block; } 
+img { max-width: 100%; height: auto; } 
+ 
+ @media (max-width: 600px) { 
+   nav a { 
+  display: block; 
+  margin: 4px 0; 
+   } 
+   body { font-size: 15px; } 
+ } 
 
