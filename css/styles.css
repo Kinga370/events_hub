@@ -117,5 +117,24 @@ img { max-width: 100%; height: auto; }
   margin: 4px 0; 
    } 
    body { font-size: 15px; } 
+   
  } 
+
+ /* Pseudo-class example: highlight input when focused */
+input:focus {
+  border-color: #0d6efd;   /* Bootstrap primary blue */
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.5); /* subtle glow */
+}
+/* This rule applies when a user clicks into (focuses) an input field,
+   making it visually clear which field is active. */
+
+
+/* Attribute selector example: style required fields */
+input[required] {
+  background-color: #fff3cd; /* light yellow background */
+  border: 1px solid #ffc107; /* amber border */
+}
+/* This rule targets any input element with the 'required' attribute,
+   giving users a visual cue that the field must be filled in. */
+
 
