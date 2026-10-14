@@ -32,7 +32,14 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container py-4">
+
+    <!-- New hooks -->
+    <p id="welcomeMsg">Welcome to the JNEC Events Hub!</p>
+    <button id="darkToggle" class="btn btn-dark mb-3">Toggle Dark Mode</button>
+    <div class="row g-3" id="home-events">
+      <!-- Three preview cards will be dynamically inserted here -->
+    </div>
 
     <!-- Carousel: first thing inside main -->
     <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -54,29 +61,24 @@
       </button>
     </div>
 
-    <div class="container py-4">
+    <section id="welcome" class="intro mt-4">
+      <h2>Welcome</h2>
+      <p>The <strong>Events Hub</strong> lists every upcoming event at 
+        <em>Jigme Namgyel Engineering College</em>. 
+        <span class="highlight" title="Registrations close 3 days before each event">Register early!</span>
+      </p>
+      <img src="media/campus.jpeg" alt="JNEC campus" width="400" title="Our campus in Dewathang">
+    </section>
 
-      <section id="welcome" class="intro">
-        <h2>Welcome</h2>
-        <p id="welcomeMsg">Welcome to the JNEC Events Hub!</p>
-        <p>The <strong>Events Hub</strong> lists every upcoming event at 
-          <em>Jigme Namgyel Engineering College</em>. 
-          <span class="highlight" title="Registrations close 3 days before each event">Register early!</span>
-        </p>
-        <img src="media/campus.jpeg" alt="JNEC campus" width="400" title="Our campus in Dewathang">
-      </section>
-
-      <section id="location">
-        <h2>Find Us</h2>
-        <iframe 
-          src="https://www.openstreetmap.org/export/embed.html?bbox=91.44,26.85,91.48,26.88" 
-          width="400" 
-          height="250" 
-          title="Campus map">
-        </iframe>
-      </section>
-
-    </div>
+    <section id="location" class="mt-4">
+      <h2>Find Us</h2>
+      <iframe 
+        src="https://www.openstreetmap.org/export/embed.html?bbox=91.44,26.85,91.48,26.88" 
+        width="400" 
+        height="250" 
+        title="Campus map">
+      </iframe>
+    </section>
 
   </main>
 
