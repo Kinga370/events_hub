@@ -37,7 +37,7 @@ main {
  h1, h2, h3 { font-family: Georgia, serif; }  /* grouping */ 
 /* combinators */ 
  nav a { text-decoration: none; }         /* descendant */ 
- main > section { margin-bottom: 24px; }  /* child   	*/ 
+ main > section { margin-bottom: 24px; }  /* child      */ 
  h2 + p { font-style: italic; }           /* adjacent   */ 
  h2 ~ p { color: #334155; }               /* general sibling */ 
 /* pseudo-classes */ 
@@ -66,7 +66,7 @@ main {
  input[type="text"] { border: 1px solid #cbd5e1; padding: 8px; } 
 body { 
    font-family: "Segoe UI", Arial, sans-serif; 
-   font-size: 16px;       	/* base size */ 
+   font-size: 16px;         /* base size */ 
  } 
  h1 { font-size: 2rem; } 
  h2 { font-size: 1.5rem; } 
@@ -138,3 +138,39 @@ input[required] {
    giving users a visual cue that the field must be filled in. */
 
 
+/* === Dark Mode Styles === */
+body.dark-mode {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+body.dark-mode header {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+body.dark-mode footer {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+body.dark-mode nav a {
+  color: #93c5fd;
+}
+
+body.dark-mode .intro {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+/* === Error Styles === */
+.error {
+  color: #b91c1c;
+  font-weight: bold;
+}
+
+input.error, select.error, textarea.error {
+  border: 2px solid #b91c1c;
+  background-color: #fee2e2;
+}
